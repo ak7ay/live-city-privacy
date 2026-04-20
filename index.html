@@ -13,7 +13,7 @@
 </head>
 <body>
   <h1>Privacy Policy for Live Bengaluru</h1>
-  <p><strong>Effective date:</strong> April 9, 2026</p>
+  <p><strong>Effective date:</strong> April 20, 2026</p>
 
   <p>
     Live Bengaluru (the "App") is developed and maintained by Hanif.
@@ -36,11 +36,26 @@
     by the respective service providers under their own privacy policies.
   </p>
 
+  <h2>Push notifications</h2>
+  <p>
+    The App uses Firebase Cloud Messaging (FCM) to deliver optional push
+    notifications (for example, when a new article or event is published).
+    To do this, Google generates a device-specific FCM registration token,
+    which the App stores on its Appwrite backend solely for the purpose of
+    sending notifications to your device. The token is not tied to your
+    identity and is not used for advertising, profiling, or analytics.
+    You can disable notifications at any time from the Android system
+    settings for the App.
+  </p>
+
   <h2>Permissions</h2>
   <p>
-    The App requests only the <code>INTERNET</code> permission, which is required
-    to fetch content from the backend. No other permissions are requested.
+    The App requests the following permissions:
   </p>
+  <ul>
+    <li><code>INTERNET</code> — required to fetch content from the backend.</li>
+    <li><code>POST_NOTIFICATIONS</code> — required on Android 13+ to display push notifications. You will be prompted before any notification is shown and can deny or revoke this permission at any time.</li>
+  </ul>
 
   <h2>Children's privacy</h2>
   <p>
